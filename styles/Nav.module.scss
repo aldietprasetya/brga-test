@@ -6,6 +6,7 @@
 	flex-direction: column;
 	overflow: hidden;
   position: relative;
+  z-index: 1;
 
   &__bound {
 		flex: 1 1 0%;

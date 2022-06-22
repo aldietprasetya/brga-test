@@ -211,9 +211,12 @@ export default function aspekManajemen() {
       pathname: "/beranda/laporan/konfirmasi"
     })
   })
-  
+
   function clearData() {
     localStorage.setItem("dataSubmit", JSON.stringify({}));
+    router.push({
+      pathname: "#"
+    })
   }
 
   return (

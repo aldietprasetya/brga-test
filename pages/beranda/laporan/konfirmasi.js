@@ -1,15 +1,21 @@
+import React, { useRef } from 'react';
+import Image from 'next/image'
+import { useReactToPrint } from 'react-to-print';
 import Header from '../../../components/Header'
 import Footer from '../../../components/Footer'
 import Sidebar from '../../../components/Sidebar'
-import Image from 'next/image'
 import styles from '../../../styles/Home.module.scss'
 import mng from '../../../styles/Managemen.module.scss'
 
+import { ComponentToPrint } from './print';
+
 export default function aspekManajemen() {
 
-  function handleBtnPreview() {
-    alert('Lihat Preview Laporan')
-  }
+  const componentRef = useRef();
+  const handleBtnPreview = useReactToPrint({
+    content: () => componentRef.current,
+  });
+
   function handleBtnDraft() {
     alert('Simpan di Draft')
   }
@@ -24,6 +30,10 @@ export default function aspekManajemen() {
 
       <div className='container flex justify-between mx-auto my-6'>
         <Sidebar/>
+
+        <div className='absolute top-0 opacity-0 z-0'>
+          <ComponentToPrint ref={componentRef} />
+        </div>
 
         <div className={mng.base}>
           <div className={mng.base__wrapper}>
