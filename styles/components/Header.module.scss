@@ -1,0 +1,30 @@
+.header {
+  @apply relative shadow-lg bg-white;
+  &__container {
+    @apply container mx-auto;
+  }
+  &__wrapper {
+    @apply flex items-center;
+    height: 80px;
+  }
+  &__logo {
+
+  }
+  &__title {
+    @apply flex-1 text-right font-bold text-2xl;
+  }
+  &__user {
+    @apply flex ml-auto cursor-pointer;
+  }
+  &__userdetail {
+    @apply ml-3 mr-8 flex flex-col justify-center;
+  }
+  &__username {
+    @apply text-sm text-green-1 font-medium mb-1;
+    line-height: 17px;
+  }
+  &__useremail {
+    @apply text-xs text-grey-1;
+    line-height: 15px;
+  }
+}

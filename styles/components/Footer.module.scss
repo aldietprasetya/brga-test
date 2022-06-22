@@ -1,0 +1,11 @@
+.footer {
+  @apply bg-grey-2;
+  &__container {
+    @apply container mx-auto flex items-center justify-center;
+    height: 44px;
+  }
+
+  &__copyright {
+    @apply text-sm text-grey-3;
+  }
+}
