@@ -135,7 +135,7 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
                 <ul>
                   {
                     items.map((item,ii) => (
-                      <li><span>{item.title}</span>:<span>{item.value}</span></li>
+                      <li key={ii}><span>{item.title}</span>:<span>{item.value}</span></li>
                     ))
                   }
                 </ul>

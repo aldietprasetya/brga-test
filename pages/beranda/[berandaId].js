@@ -5,3 +5,7 @@ function beranda() {
   const berandaId = router.query.berandaId
   return berandaId
 }
+
+export default function konfirmasi() {
+  return(<></>)
+}

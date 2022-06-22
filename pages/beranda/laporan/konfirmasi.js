@@ -9,7 +9,7 @@ import mng from '../../../styles/Managemen.module.scss'
 
 import { ComponentToPrint } from './print';
 
-export default function aspekManajemen() {
+export default function konfirmasi() {
 
   const componentRef = useRef();
   const handleBtnPreview = useReactToPrint({
