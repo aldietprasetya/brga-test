@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
-import styles from '../../../styles/Home.module.scss'
-import mng from '../../../styles/Managemen.module.scss'
+import styles from '../styles/Home.module.scss'
+import mng from '../styles/Managemen.module.scss'
 
 export const ComponentToPrint = React.forwardRef((props, ref) => {
 

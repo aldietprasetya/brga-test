@@ -6,8 +6,7 @@ import Footer from '../../../components/Footer'
 import Sidebar from '../../../components/Sidebar'
 import styles from '../../../styles/Home.module.scss'
 import mng from '../../../styles/Managemen.module.scss'
-
-import { ComponentToPrint } from './print';
+import { ComponentToPrint } from '../../../components/Print';
 
 export default function konfirmasi() {
 
