@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "(if exist .next rd /s /q .next 2>nul) && next dev",
     "build": "next build",
-    "export": "next export"
+    "export": "next export",
     "start": "next start",
     "lint": "next lint"
   },
