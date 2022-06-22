@@ -30,7 +30,7 @@ export default function konfirmasi() {
       <div className='container flex justify-between mx-auto my-6'>
         <Sidebar/>
 
-        <div className='absolute top-0 opacity-0 z-0'>
+        <div className='absolute top-0 opacity-0 z-0 scale-0'>
           <ComponentToPrint ref={componentRef} />
         </div>
 
