@@ -14,8 +14,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   reactStrictMode: true,
-  pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js'],
-  distDir: 'build',
+  pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js']
 }
 
 module.exports = nextConfig
